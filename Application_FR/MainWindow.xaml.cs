@@ -23,6 +23,31 @@ namespace Application_FR
         public MainWindow()
         {
             InitializeComponent();
+
+            dataGrid1.Visibility = Visibility.Hidden;
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+
+
+            dataGrid1.Visibility = Visibility.Visible;
+        }
+
+        private void LogButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+
+
+        }
+
+        private void dataGrid1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+
+
         }
     }
 }

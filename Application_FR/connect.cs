@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -30,6 +31,7 @@ namespace Application_FR
             _connectionstring = $"SERVER=(_host);DATABASE=(_db);UID=(_user);PASSWORD=(_password);SslMode=None";
 
             _connection = new MySqlConnection(_connectionstring);
+
         }
 
     }
