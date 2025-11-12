@@ -1,5 +1,7 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,34 +22,19 @@ namespace Application_FR
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        private readonly Database db = new Database();
+
         public MainWindow()
         {
             InitializeComponent();
-
-            dataGrid1.Visibility = Visibility.Hidden;
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-
-
-            dataGrid1.Visibility = Visibility.Visible;
-        }
-
-        private void LogButton_Click(object sender, RoutedEventArgs e)
-        {
             
-
-
         }
 
-        private void dataGrid1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void RegButton_Click(object sender, RoutedEventArgs e)
         {
-
-
-
+           
         }
+        
     }
 }

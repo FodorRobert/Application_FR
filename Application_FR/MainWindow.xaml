@@ -8,13 +8,13 @@
         Title="MainWindow" Height="450" Width="900">
     <Grid>
         <Button Content="Regisztráció" HorizontalAlignment="Left" Margin="18,302,0,0" VerticalAlignment="Top" Height="38" Width="304" Background="Red" FontSize="24" Click="Button_Click"/>
-        <TextBox x:Name="usernameTextBox" HorizontalAlignment="Left" Margin="18,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="304" Height="39" FontSize="20"/>
+        <TextBox x:Name="usernameTextBox" HorizontalAlignment="Left" Margin="18,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="304" Height="39" FontSize="30"/>
         <Label Content="Felhasználónév:" HorizontalAlignment="Left" Margin="83,15,0,0" VerticalAlignment="Top" FontSize="24"/>
         <Label Content="Jelszó:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="39" Width="76" FontSize="24" Margin="132,109,0,0"/>
         <DataGrid x:Name="dataGrid1" Margin="340,10,10,10" SelectionChanged="dataGrid1_SelectionChanged"/>
         <Label Content="Jelszó újra:" HorizontalAlignment="Left" Margin="109,211,0,0" VerticalAlignment="Top" FontSize="24"/>
-        <PasswordBox x:Name="passbox" HorizontalAlignment="Left" Margin="18,148,0,0" VerticalAlignment="Top" Width="304" Height="39"/>
-        <PasswordBox x:Name="passbox_ujra" HorizontalAlignment="Left" Margin="18,258,0,0" VerticalAlignment="Top" Width="304" Height="39"/>
+        <PasswordBox x:Name="passbox" HorizontalAlignment="Left" Margin="18,148,0,0" VerticalAlignment="Top" Width="304" Height="39" FontSize="30"/>
+        <PasswordBox x:Name="passbox_ujra" HorizontalAlignment="Left" Margin="18,258,0,0" VerticalAlignment="Top" Width="304" Height="39" FontSize="30"/>
 
     </Grid>
 </Window>
