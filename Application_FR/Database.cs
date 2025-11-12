@@ -70,17 +70,25 @@ namespace Application_FR
         }
         public DataTable GetAllUsers()
         {
-            DataTable dt = new DataTable();
-
-            using (MySqlConnection conn = new MySqlConnection("server=localhost;database=application;uid=root;pwd=;"))
+            try
             {
-                conn.Open();
-                MySqlCommand cmd = new MySqlCommand("SELECT * FROM datas", conn);
-                MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
-                adapter.Fill(dt);
-            }
+                DataTable dt = new DataTable();
 
-            return dt;
+                using (MySqlConnection conn = new MySqlConnection("server=localhost;database=application;uid=root;pwd=;"))
+                {
+                    conn.Open();
+                    MySqlCommand cmd = new MySqlCommand("SELECT * FROM datas", conn);
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+                    adapter.Fill(dt);
+                }
+
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+            
         }
     }
 }
